@@ -60,17 +60,57 @@
 		42FCFD7324901A7D0051E408 /* Birds */ = {
 			isa = PBXGroup;
 			children = (
-				42FCFD7424901A7D0051E408 /* AppDelegate.swift */,
-				42FCFD7624901A7D0051E408 /* GameScene.sks */,
-				42FCFD7A24901A7D0051E408 /* GameScene.swift */,
-				42FCFD7C24901A7D0051E408 /* GameViewController.swift */,
+				42FCFD94249022CD0051E408 /* TileSets */,
+				42FCFD932490223E0051E408 /* Template */,
+				42FCFD92249022350051E408 /* ViewController */,
+				42FCFD91249021CB0051E408 /* Scenes */,
+				42FCFD8E249021B00051E408 /* UI */,
+			);
+			path = Birds;
+			sourceTree = "<group>";
+		};
+		42FCFD8E249021B00051E408 /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				42FCFD7E24901A7D0051E408 /* Main.storyboard */,
 				42FCFD8124901A800051E408 /* Assets.xcassets */,
 				42FCFD8324901A800051E408 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		42FCFD91249021CB0051E408 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				42FCFD7624901A7D0051E408 /* GameScene.sks */,
+				42FCFD7A24901A7D0051E408 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		42FCFD92249022350051E408 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42FCFD7C24901A7D0051E408 /* GameViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		42FCFD932490223E0051E408 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				42FCFD7424901A7D0051E408 /* AppDelegate.swift */,
 				42FCFD8624901A800051E408 /* Info.plist */,
+			);
+			name = Template;
+			sourceTree = "<group>";
+		};
+		42FCFD94249022CD0051E408 /* TileSets */ = {
+			isa = PBXGroup;
+			children = (
 				42FCFD8C24901DB80051E408 /* BirdTileSet.sks */,
 			);
-			path = Birds;
+			path = TileSets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
