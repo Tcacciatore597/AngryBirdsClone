@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420611BC2492CD5F001A2650 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420611BB2492CD5F001A2650 /* GameCamera.swift */; };
 		42FCFD7524901A7D0051E408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FCFD7424901A7D0051E408 /* AppDelegate.swift */; };
 		42FCFD7724901A7D0051E408 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 42FCFD7624901A7D0051E408 /* GameScene.sks */; };
 		42FCFD7B24901A7D0051E408 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FCFD7A24901A7D0051E408 /* GameScene.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420611BB2492CD5F001A2650 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
 		42FCFD7124901A7D0051E408 /* Birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FCFD7424901A7D0051E408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42FCFD7624901A7D0051E408 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420611BA2492CD36001A2650 /* Custom Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				420611BB2492CD5F001A2650 /* GameCamera.swift */,
+			);
+			path = "Custom Nodes";
+			sourceTree = "<group>";
+		};
 		42FCFD6824901A7D0051E408 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		42FCFD7324901A7D0051E408 /* Birds */ = {
 			isa = PBXGroup;
 			children = (
+				420611BA2492CD36001A2650 /* Custom Nodes */,
 				42FCFD94249022CD0051E408 /* TileSets */,
 				42FCFD932490223E0051E408 /* Template */,
 				42FCFD92249022350051E408 /* ViewController */,
@@ -188,6 +199,7 @@
 			files = (
 				42FCFD7B24901A7D0051E408 /* GameScene.swift in Sources */,
 				42FCFD7D24901A7D0051E408 /* GameViewController.swift in Sources */,
+				420611BC2492CD5F001A2650 /* GameCamera.swift in Sources */,
 				42FCFD7524901A7D0051E408 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
