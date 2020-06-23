@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		420611BC2492CD5F001A2650 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420611BB2492CD5F001A2650 /* GameCamera.swift */; };
+		42F180B324A2B46F008C78C1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F180B224A2B46F008C78C1 /* Configuration.swift */; };
 		42FCFD7524901A7D0051E408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FCFD7424901A7D0051E408 /* AppDelegate.swift */; };
 		42FCFD7724901A7D0051E408 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 42FCFD7624901A7D0051E408 /* GameScene.sks */; };
 		42FCFD7B24901A7D0051E408 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FCFD7A24901A7D0051E408 /* GameScene.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		420611BB2492CD5F001A2650 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
+		42F180B224A2B46F008C78C1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		42FCFD7124901A7D0051E408 /* Birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FCFD7424901A7D0051E408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42FCFD7624901A7D0051E408 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				42FCFD7424901A7D0051E408 /* AppDelegate.swift */,
 				42FCFD8624901A800051E408 /* Info.plist */,
+				42F180B224A2B46F008C78C1 /* Configuration.swift */,
 			);
 			name = Template;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FCFD7B24901A7D0051E408 /* GameScene.swift in Sources */,
+				42F180B324A2B46F008C78C1 /* Configuration.swift in Sources */,
 				42FCFD7D24901A7D0051E408 /* GameViewController.swift in Sources */,
 				420611BC2492CD5F001A2650 /* GameCamera.swift in Sources */,
 				42FCFD7524901A7D0051E408 /* AppDelegate.swift in Sources */,
