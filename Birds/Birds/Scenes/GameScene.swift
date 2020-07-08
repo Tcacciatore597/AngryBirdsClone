@@ -17,6 +17,8 @@ class GameScene: SKScene {
     var panRecognizer = UIPanGestureRecognizer()
     var pinchRecognizer = UIPinchGestureRecognizer()
     var maxScale: CGFloat = 0
+    var bird = Bird(type: .red)
+    let anchor = SKNode()
     
     override func didMove(to view: SKView) {
         setupLevel()
@@ -35,10 +37,13 @@ class GameScene: SKScene {
     func setupLevel() {
         if let mapNode = childNode(withName: "Tile Map Node") as? SKTileMapNode {
             self.mapNode = mapNode
-            maxScale = mapNode.mapSize.height/frame.size.height
+            maxScale = mapNode.mapSize.width/frame.size.width
         }
         
         addCamera()
+        anchor.position = CGPoint(x: mapNode.frame.midX/2, y: mapNode.frame.midY/2)
+        addChild(anchor)
+        addBird()
     }
     
     func addCamera() {
@@ -47,6 +52,11 @@ class GameScene: SKScene {
         gameCamera.position = CGPoint(x: view.bounds.size.width/2, y: view.bounds.size.height/2)
         camera = gameCamera
         gameCamera.setContraints(with: self, and: mapNode.frame, to: nil)
+    }
+    
+    func addBird() {
+        bird.position = anchor.position
+        addChild(bird)
     }
     
 }
@@ -73,8 +83,8 @@ extension GameScene {
                 }
                 
                 let locationAfterScale = convertPoint(fromView: locationInView)
-                let locationDelta = CGPoint(x: location.x - locationAfterScale.x, y: location.y - locationAfterScale.y)
-                let newPosition = CGPoint(x: gameCamera.position.x + locationDelta.x, y: gameCamera.position.y + locationDelta.y)
+                let locationDelta = location - locationAfterScale
+                let newPosition = gameCamera.position + locationDelta
                 gameCamera.position = newPosition
                 sender.scale = 1.0
                 gameCamera.setContraints(with: self, and: mapNode.frame, to: nil)
