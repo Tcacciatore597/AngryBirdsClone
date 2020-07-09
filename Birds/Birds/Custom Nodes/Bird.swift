@@ -15,6 +15,7 @@ enum BirdType: String {
 class Bird: SKSpriteNode {
     
     var birdType: BirdType
+    var grabbed = false
     
     init(type: BirdType) {
         birdType = type
