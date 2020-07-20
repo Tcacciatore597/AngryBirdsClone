@@ -47,6 +47,7 @@ class GameScene: SKScene {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if bird.grabbed {
+            gameCamera.setContraints(with: self, and: mapNode.frame, to: bird)
             bird.grabbed = false
             bird.flying = true
             constraintToAnchor(active: false)
@@ -74,6 +75,15 @@ class GameScene: SKScene {
         }
         
         addCamera()
+        
+        //move frameY up by size of ground tiles.
+        let physicsRect = CGRect(x: 0, y: mapNode.tileSize.height, width: mapNode.frame.size.width, height: mapNode.frame.size.height-mapNode.tileSize.height)
+        physicsBody = SKPhysicsBody(edgeLoopFrom: physicsRect)
+        physicsBody?.categoryBitMask = PhysicsCategory.edge
+        physicsBody?.contactTestBitMask = PhysicsCategory.bird | PhysicsCategory.block
+        physicsBody?.collisionBitMask = PhysicsCategory.all
+        
+        
         anchor.position = CGPoint(x: mapNode.frame.midX/2, y: mapNode.frame.midY/2)
         addChild(anchor)
         addBird()
