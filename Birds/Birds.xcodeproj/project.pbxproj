@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		420611BC2492CD5F001A2650 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420611BB2492CD5F001A2650 /* GameCamera.swift */; };
+		424DCBAE24C8F744008C132B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424DCBAD24C8F744008C132B /* Block.swift */; };
 		42660B9224B542730046E2BE /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42660B9124B542730046E2BE /* Bird.swift */; };
 		42F180B324A2B46F008C78C1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F180B224A2B46F008C78C1 /* Configuration.swift */; };
 		42FCFD7524901A7D0051E408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FCFD7424901A7D0051E408 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		420611BB2492CD5F001A2650 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
+		424DCBAD24C8F744008C132B /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		42660B9124B542730046E2BE /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		42F180B224A2B46F008C78C1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		42FCFD7124901A7D0051E408 /* Birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 			children = (
 				420611BB2492CD5F001A2650 /* GameCamera.swift */,
 				42660B9124B542730046E2BE /* Bird.swift */,
+				424DCBAD24C8F744008C132B /* Block.swift */,
 			);
 			path = "Custom Nodes";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FCFD7B24901A7D0051E408 /* GameScene.swift in Sources */,
+				424DCBAE24C8F744008C132B /* Block.swift in Sources */,
 				42F180B324A2B46F008C78C1 /* Configuration.swift in Sources */,
 				42FCFD7D24901A7D0051E408 /* GameViewController.swift in Sources */,
 				420611BC2492CD5F001A2650 /* GameCamera.swift in Sources */,
