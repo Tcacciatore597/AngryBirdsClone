@@ -109,11 +109,11 @@ class GameScene: SKScene {
                 let block = Block(type: type)
                 block.size = child.size
                 block.position = child.position
-                block.color = UIColor.brown
+                block.zRotation = child.zRotation
                 block.zPosition = ZPosition.obstacles
                 block.createPhysicsBody()
                 mapNode.addChild(block)
-                child.color = UIColor.clear
+                child.removeFromParent()
             }
         }
         
